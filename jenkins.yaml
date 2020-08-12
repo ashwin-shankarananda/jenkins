@@ -111,7 +111,7 @@ spec:
           hostPath:
             path: /mnt/jenkins-store
       serviceAccountName: jenkins
----
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -123,10 +123,10 @@ spec:
     - name: ui
       port: 8080
       targetPort: 8080
-      nodePort: 31000
+      nodePort: 31010
     - name: jnlp
       port: 50000
       targetPort: 50000
   selector:
     app: jenkins
----
+
